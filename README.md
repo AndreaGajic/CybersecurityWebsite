@@ -1,2 +1,2 @@
-# CybersecurityWebsite
+# Cybersecurit yWebsite
 Cybersecurity Website
