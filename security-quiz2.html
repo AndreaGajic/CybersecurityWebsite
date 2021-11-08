@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!-- code by webdevtrick (https://webdevtrick.com) -->
+<html>
+  <head lang="en">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Quiz</title>
+    <link rel="stylesheet" type="text/css" href="security-quiz2.css" />
+  </head>
+  <body>
+    <div class="title">
+      <h1>Hydroflasks' Ultimate Cybersecurity Guide</h1>
+    </div>
+
+    <div class="topnav" id="myTopnav">
+      <a href="cybersecurity-home.html">Home</a>
+      <div class="dropdown">
+        <button class="dropbtn">Operating System Lessons</button>
+        <div class="dropdown-content">
+          <a href="linux.html">Linux</a>
+          <a href="windows.html">Windows</a>
+        </div>
+      </div>
+      <a href="general-cyber.html">General Cybersecurity</a>
+      <a href="fun-stuff.html">Fun Stuff</a>
+    </div>
+
+    <div class="grid">
+      <div id="quiz">
+        <h1>Cybersecurity Quiz</h1>
+        <hr style="margin-bottom: 20px" />
+
+        <p id="question"></p>
+
+        <div class="buttons">
+          <button id="btn0"><span id="choice0"></span></button>
+          <button id="btn1"><span id="choice1"></span></button>
+          <button id="btn2"><span id="choice2"></span></button>
+          <button id="btn3"><span id="choice3"></span></button>
+        </div>
+
+        <hr style="margin-top: 50px" />
+        <footer>
+          <p id="progress">Question x of y</p>
+        </footer>
+      </div>
+    </div>
+
+    <script src="security-quiz2.js"></script>
+  </body>
+</html>
