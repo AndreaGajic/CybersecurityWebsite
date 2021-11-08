@@ -1,0 +1,81 @@
+/* CSS files add styling rules to your content */
+
+body {
+  background-color: lightblue;
+  margin: 0;
+}
+@viewport {
+  width: device-width ;
+  zoom: 1.0 ;
+}
+h1 {
+  color: #EFF3FE;
+  margin: 0px;
+  padding: 10px;
+  font-family: 'OCR A Std';
+  text-align: center;
+}
+
+p {
+  color: #EFF3FE;
+  text-align: center;
+  font-size: 16px;
+}
+
+.title {
+  overflow: visible;
+  background-color: #5F91E0;
+}
+
+.nav {
+  overflow: hidden;
+  background-color: #27385E;
+}
+
+.nav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 20px 20px;
+  text-decoration: none;
+  font-size: 17px;
+  margin: 5px;
+  padding: 15px;
+  font-family: 'Courier';
+}
+
+.nav a:hover {
+  background-color: #D1E5FE;
+  color: black;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-family: 'OCR A Std';
+  text-align: Center;
+}
+
+h3 {
+  font-family: 'Courier';
+  text-align: Center;
+}
+.nav {
+  font-family: 'OCR A Std';
+}
+.portal {
+  border: 8px solid #27385E;
+  background-color: #5F91E0;
+  font-family: 'Courier';
+  font-size: 60px;
+}
+.portal a {
+  color: white;
+}
+.portal a:hover {
+  color: black;
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Cybersecurity Central | Ultimate Cybersecurity Guide</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/linux.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <div class="title">
+      <h1>Hydroflasks' Ultimate Cybersecurity Guide</h1>
+    </div>
+
+    <div class="topnav" id="myTopnav">
+      <a href="cybersecurity-home.html">Home</a>
+      <div class="dropdown">
+        <button class="dropbtn">Operating System Lessons</button>
+        <div class="dropdown-content">
+          <a href="linux.html">Linux</a>
+          <a href="windows.html">Windows</a>
+        </div>
+      </div>
+      <a href="general-cyber.html">General Cybersecurity</a>
+      <a href="fun-stuff.html">Fun Stuff</a>
+    </div>
+    <div class="linux">
+      <h3>
+        Intro
+      </h3>
+      <p>
+        Linux is a family of open-source operating systems that resemble the
+        UNIX operating system. Open-source means the source code for the Linux
+        kernel is freely distributed and anyone can modify it. It is based on
+        the Linux kernel released on September 17, 1991, by Linus Torvalds,a
+        student at the Univeristy of Helsinki. Linux has a variety of
+        distributions, which are the operating systems created by modifying the
+        kernel in some way. Common Linux distributions include Ubuntu, Fedora,
+        Debian, and Linux Mint.
+      </p>
+
+      <p>
+        Linux mostly uses the command line, rather than the Graphical User
+        Interface (GUI) like Windows does. This means most commands such as
+        editing files, installing programs, and securing the operating system
+        are run in the terminal.
+      </p>
+      <img alt="Linux Terminal" src="https://cdn.glitch.com/decc974a-63c0-4251-aca5-33ba060a0424%2F1-Intro-to-Unix-terminal-%E2%80%93-p2.png?v=1597584108082" style="width:280px;height:170px;"/>
+      <h3>
+        Sudo
+      </h3>
+      <p>
+        Similar to the 'Run as Administrator' action in Windows GUI, Linux can
+        also give users Administrator privileges. This is done by using the
+        'sudo' command in the terminal. One can obtain superuser privilegs by
+        runnign 'sudo su' or just make administrator changes by typing 'sudo'
+        before the rest of the command.
+      </p>
+      <p>
+        A best practice is to ensure a password is required to run sudo. This
+        prevents users that should not have administrator privileges from
+        getting them.
+      </p>
+      <h3>
+        Password Requirements in /etc/login.defs
+      </h3>
+      <p>
+        An important security file in Linux is the /etc/login.defs file. This is
+        where password settings are located. The following settings should be
+        configured in your /etc/login.defs file. They will set the minimum and
+        maximum number of days you can keep the same password, and when it will
+        warn you your password will need to be changed soon. The encryption
+        method for passwords is also configured here. The numbers configured
+        here are the reccommended values for a secure operating system.
+      </p>
+      <div class="courier">
+        <p>
+          PASS_MIN_DAYS 7
+        </p>
+        <p>
+          PASS_MAX_DAYS 90
+        </p>
+        <p>
+          PASS_WARN_AGE 14
+        </p>
+        <p>
+          ENCRYPT_METHOD SHA512
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
